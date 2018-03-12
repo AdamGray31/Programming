@@ -1,0 +1,11 @@
+﻿  Mesh.cpp
+Mesh.cpp(68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Mesh.cpp(69): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Mesh.cpp(70): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  1 of 338 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  SoftwareRasteriser.vcxproj -> C:\MEGA\MEGAsync\Uni\Stage 3\CSC3223 - Graphics for Games\Rasteriser\SoftwareRasteriser\Release\SoftwareRasteriser.exe
+  SoftwareRasteriser.vcxproj -> C:\MEGA\MEGAsync\Uni\Stage 3\CSC3223 - Graphics for Games\Rasteriser\SoftwareRasteriser\Release\SoftwareRasteriser.pdb (Full PDB)

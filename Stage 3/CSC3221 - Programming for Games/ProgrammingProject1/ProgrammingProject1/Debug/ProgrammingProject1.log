@@ -1,0 +1,8 @@
+﻿  Vector3D.cpp
+d:\mega\uni\stage 3\csc3221 - programming for games\programmingproject1\programmingproject1\vector3d.h(30): warning C4521: 'Vector3D': multiple copy constructors specified
+  Test.cpp
+d:\mega\uni\stage 3\csc3221 - programming for games\programmingproject1\programmingproject1\vector3d.h(30): warning C4521: 'Vector3D': multiple copy constructors specified
+  Bin.cpp
+d:\mega\uni\stage 3\csc3221 - programming for games\programmingproject1\programmingproject1\vector3d.h(30): warning C4521: 'Vector3D': multiple copy constructors specified
+  Generating Code...
+  ProgrammingProject1.vcxproj -> D:\MEGA\Uni\Stage 3\CSC3221 - Programming for Games\ProgrammingProject1\Debug\ProgrammingProject1.exe

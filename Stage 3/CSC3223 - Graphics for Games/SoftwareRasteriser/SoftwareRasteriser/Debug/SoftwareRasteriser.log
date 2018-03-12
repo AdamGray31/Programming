@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\mega\uni\stage 3\csc3223 - graphics for games\rasteriser\softwarerasteriser\softwarerasteriser\main.cpp(102): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\mega\uni\stage 3\csc3223 - graphics for games\rasteriser\softwarerasteriser\softwarerasteriser\main.cpp(104): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\mega\uni\stage 3\csc3223 - graphics for games\rasteriser\softwarerasteriser\softwarerasteriser\main.cpp(109): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  SoftwareRasteriser.vcxproj -> D:\MEGA\Uni\Stage 3\CSC3223 - Graphics for Games\Rasteriser\SoftwareRasteriser\Debug\SoftwareRasteriser.exe

@@ -1,0 +1,24 @@
+#version 330 core
+
+uniform mat4 modelMatrix;
+uniform mat4 viewMatrix;
+uniform mat4 projMatrix;
+
+in  vec3 position;
+in  vec2 texCoord;
+in  vec4 colour;
+
+out Vertex {
+	vec2 texCoord;
+	vec4 colour;
+} OUT;
+
+void main(void)	{
+
+	OUT.texCoord	= texCoord;
+	OUT.colour		= colour;
+
+	mat4 mvp		= projMatrix * viewMatrix * modelMatrix;
+	gl_Position		= mvp * vec4(position, 1.0);
+
+}

@@ -1,0 +1,7 @@
+﻿  Game.cpp
+d:\mega\uni\stage 3\csc3221 - programming for games\programmingproject2\programmingproject2\game.cpp(23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\mega\uni\stage 3\csc3221 - programming for games\programmingproject2\programmingproject2\game.cpp(32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\mega\uni\stage 3\csc3221 - programming for games\programmingproject2\programmingproject2\game.cpp(36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Circle.cpp
+  Generating Code...
+  ProgrammingProject2.vcxproj -> D:\MEGA\Uni\Stage 3\CSC3221 - Programming for Games\ProgrammingProject2\x64\Debug\ProgrammingProject2.exe

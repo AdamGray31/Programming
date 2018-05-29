@@ -6,8 +6,8 @@ class PhysicsNode {
 public:
 	
 	PhysicsNode();
-	PhysicsNode(Vector3 position, float rotation, float radius, float aggroRange, Vector3 scale);
-	PhysicsNode(int x, int y, float rotation, float radius, float aggroRange, Vector3 scale);
+	PhysicsNode(Vector3 position, float rotation, float radius, float aggroRange = 0, Vector3 scale = Vector3());
+	PhysicsNode(int x, int y, float rotation, float radius, float aggroRange = 0, Vector3 scale = Vector3());
 	PhysicsNode(PhysicsNode &p);
 	~PhysicsNode();
 
@@ -15,21 +15,23 @@ public:
 	void updateX(float x);
 	void updateY(float y);
 	void updatePosition(float x, float y);
-	void updatePosition(Vector3 v);
+	void updatePosition(Vector2 v, float msec);
 	void setPosition(Vector3 pos);
 	void setPosition(int x, int y);
 	void updateRotation(float r);
 	void setRotation(float r);
 	void updateAggroRange(float x);
-	void updateEntitiesInRange(int e);
+	void setEntitiesInRange(int e);
 	void setXScale(float x);
 	void setYScale(float y);
 	void updateXScale(float x);
 	void updateYScale(float y);
 	void updateScale(Vector3 scale);
 	void setRadius(float r);
+	void updateRadius(float r);
 	void setVelocity(Vector2 v);
 	void setMaxSpeed(float v);
+	void setCurrentSpeed(float v);
 
 	//Get private members
 	float getX() const;
@@ -44,6 +46,7 @@ public:
 	float getRadius() const;
 	Vector2 getVelocity() const;
 	float getMaxSpeed() const;
+	float getCurrentSpeed() const;
 
 private:
 	Vector3 position;
@@ -54,6 +57,7 @@ private:
 	float radius;
 	Vector2 velocity;
 	float maxSpeed;
+	float currentSpeed;
 
 	Vector3 gridToFloat(int x, int y);
 };

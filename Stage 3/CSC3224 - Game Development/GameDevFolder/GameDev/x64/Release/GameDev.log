@@ -1,0 +1,15 @@
+﻿  Controller.cpp
+  Entity.cpp
+  Event.cpp
+  Input.cpp
+  KeyboardMouse.cpp
+  main.cpp
+d:\mega\uni\stage 3\gitlab\gamedev\gamedevfolder\gamedev\Renderer.h(3): fatal error C1083: Cannot open include file: '../nclgl/OGLRenderer.h': No such file or directory
+  Physics.cpp
+Physics.cpp(33): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Renderer.cpp
+d:\mega\uni\stage 3\gitlab\gamedev\gamedevfolder\gamedev\Renderer.h(3): fatal error C1083: Cannot open include file: '../nclgl/OGLRenderer.h': No such file or directory
+  XboxPad.cpp
+XboxPad.cpp(38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+XboxPad.cpp(39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating Code...

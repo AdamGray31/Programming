@@ -120,18 +120,22 @@
     <ClCompile Include="Follower.cpp" />
     <ClCompile Include="Leader.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Node.cpp" />
     <ClCompile Include="Physics.cpp" />
     <ClCompile Include="PhysicsNode.cpp" />
     <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dragon.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Follower.h" />
     <ClInclude Include="Leader.h" />
+    <ClInclude Include="Node.h" />
     <ClInclude Include="Physics.h" />
     <ClInclude Include="PhysicsNode.h" />
     <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Wall.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

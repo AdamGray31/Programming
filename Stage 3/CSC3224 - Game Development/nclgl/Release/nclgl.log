@@ -1,0 +1,23 @@
+﻿  Camera.cpp
+  CubeRobot.cpp
+  Frustum.cpp
+  HeightMap.cpp
+d:\mega\uni\stage 3\gitlab\gamedev\nclgl\heightmap.cpp(8): warning C4244: '=': conversion from 'float' to 'GLuint', possible loss of data
+d:\mega\uni\stage 3\gitlab\gamedev\nclgl\heightmap.cpp(9): warning C4244: '=': conversion from 'float' to 'GLuint', possible loss of data
+d:\mega\uni\stage 3\gitlab\gamedev\nclgl\heightmap.cpp(19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\mega\uni\stage 3\gitlab\gamedev\nclgl\heightmap.cpp(31): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\mega\uni\stage 3\gitlab\gamedev\nclgl\heightmap.cpp(32): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\mega\uni\stage 3\gitlab\gamedev\nclgl\heightmap.cpp(33): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\mega\uni\stage 3\gitlab\gamedev\nclgl\heightmap.cpp(34): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  MD5Anim.cpp
+  MD5FileData.cpp
+  MD5Mesh.cpp
+  MD5Node.cpp
+  Mesh.cpp
+  Mouse.cpp
+  OBJMesh.cpp
+  OGLRenderer.cpp
+  SceneNode.cpp
+  Shader.cpp
+  Window.cpp
+  nclgl.vcxproj -> D:\MEGA\Uni\Stage 3\GitLab\GameDev\GameDevFolder\Release\nclgl.lib

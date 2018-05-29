@@ -1,5 +1,7 @@
 #pragma once
+#include <vector>
 #include "PhysicsNode.h"
+#include "Node.h"
 #include "../../nclgl/common.h"
 
 class Entity {
@@ -13,13 +15,26 @@ public:
 	void moveAway(Entity *b, float msec);
 	void moveForwards(float msec);
 	void moveBackwards(float msec);
-	void setHP(int hp);
-	void updateHP(int hp);
+	void setMass(float m);
+	void setHP(float hp);
+	void updateHP(float hp);
+	void setMaxHP(float hp);
+	void pathTo(Node* startNode, Node* goalNode);
 	float getAngle(Entity *b) const;
 	float getDistanceSquared(Entity * b) const;
-	int getHP() const;
+	float getMass() const;
+	float getHP() const;
+	float getMaxHP() const;
+	bool isAlive() const;
+
 	PhysicsNode* getPhysicsNode();
+
 private:
 	PhysicsNode* physicsNode;
-	int hitPoints;
+	float mass;
+	float hitPoints;
+	float maxHP;
+
+	
+
 };

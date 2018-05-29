@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameDev", "GameDev\GameDev.vcxproj", "{58871A7D-E625-43D5-9A59-221950F6B4FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F} = {98D6B51B-CB0A-4389-ADC6-24082B967C3F}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameDevFolder", "GameDevFolder", "{526A8B45-629A-47DB-90AE-432FE89D33BF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nclgl", "..\nclgl\nclgl.vcxproj", "{98D6B51B-CB0A-4389-ADC6-24082B967C3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58871A7D-E625-43D5-9A59-221950F6B4FD}.Debug|x64.ActiveCfg = Debug|Win32
+		{58871A7D-E625-43D5-9A59-221950F6B4FD}.Debug|x64.Build.0 = Debug|Win32
+		{58871A7D-E625-43D5-9A59-221950F6B4FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{58871A7D-E625-43D5-9A59-221950F6B4FD}.Debug|x86.Build.0 = Debug|Win32
+		{58871A7D-E625-43D5-9A59-221950F6B4FD}.Release|x64.ActiveCfg = Release|Win32
+		{58871A7D-E625-43D5-9A59-221950F6B4FD}.Release|x64.Build.0 = Release|Win32
+		{58871A7D-E625-43D5-9A59-221950F6B4FD}.Release|x86.ActiveCfg = Release|Win32
+		{58871A7D-E625-43D5-9A59-221950F6B4FD}.Release|x86.Build.0 = Release|Win32
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F}.Debug|x64.ActiveCfg = Debug|Win32
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F}.Debug|x64.Build.0 = Debug|Win32
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F}.Debug|x86.ActiveCfg = Debug|Win32
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F}.Debug|x86.Build.0 = Debug|Win32
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F}.Release|x64.ActiveCfg = Release|Win32
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F}.Release|x64.Build.0 = Release|Win32
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F}.Release|x86.ActiveCfg = Release|Win32
+		{98D6B51B-CB0A-4389-ADC6-24082B967C3F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58871A7D-E625-43D5-9A59-221950F6B4FD} = {526A8B45-629A-47DB-90AE-432FE89D33BF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C88D53E1-2329-47A3-BF90-43D0CA196A6C}
+	EndGlobalSection
+EndGlobal

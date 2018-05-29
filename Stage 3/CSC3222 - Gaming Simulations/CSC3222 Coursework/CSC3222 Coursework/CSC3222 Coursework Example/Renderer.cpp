@@ -57,6 +57,17 @@ Renderer::Renderer(Window &parent, Physics* physics) : OGLRenderer(parent) {
 		return;
 	}
 
+
+	//Raiders' arrows
+
+	arrow = Mesh::GenerateQuad();
+
+	arrow->SetTexture(SOIL_load_OGL_texture(TEXTUREDIR"arrow.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, 0));
+
+	if (!currentShader->LinkProgram() || !arrow->GetTexture()) {
+		return;
+	}
+
 	leader = Mesh::GenerateQuad();
 
 	leader->SetTexture(SOIL_load_OGL_texture(TEXTUREDIR"leader.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, 0));
@@ -107,14 +118,25 @@ Renderer::Renderer(Window &parent, Physics* physics) : OGLRenderer(parent) {
 	dragonNode->AddChild(breathNode);
 
 	for (int i = 0; i < p->raiders.size(); ++i) {
-		SceneNode * s = new SceneNode();
-		s->SetColour(Vector4(1, 1, 1, 0.999));
-		s->SetTransform(Matrix4::Translation(p->raiders.at(i)->getPhysicsNode()->getPosition())*Matrix4::Rotation(p->raiders.at(i)->getPhysicsNode()->getRotation(), Vector3(0,0,1)));
-		s->SetModelScale(p->raiders.at(i)->getPhysicsNode()->getScale());
-		s->SetMesh(raider);
-		s->SetBoundingRadius(5.0f);
-		s->SetPhysicsNode(p->raiders.at(i)->getPhysicsNode());
-		root->AddChild(s);
+		SceneNode * raiderNode = new SceneNode();
+		raiderNode->SetColour(Vector4(1, 1, 1, 0.999));
+		raiderNode->SetTransform(Matrix4::Translation(p->raiders.at(i)->getPhysicsNode()->getPosition())*Matrix4::Rotation(p->raiders.at(i)->getPhysicsNode()->getRotation(), Vector3(0,0,1)));
+		raiderNode->SetModelScale(p->raiders.at(i)->getPhysicsNode()->getScale());
+		raiderNode->SetMesh(raider);
+		raiderNode->SetBoundingRadius(5.0f);
+		raiderNode->SetPhysicsNode(p->raiders.at(i)->getPhysicsNode());
+		root->AddChild(raiderNode);
+	}
+
+	for (int i = 0; i < p->arrows.size(); ++i) {
+		SceneNode * arrowNode = new SceneNode();
+		arrowNode->SetColour(Vector4(1, 1, 1, 0.999));
+		arrowNode->SetTransform(Matrix4::Translation(p->arrows.at(i)->getPhysicsNode()->getPosition())*Matrix4::Rotation(p->arrows.at(i)->getPhysicsNode()->getRotation(),Vector3(0,0,1)));
+		arrowNode->SetModelScale(p->arrows.at(i)->getPhysicsNode()->getScale());
+		arrowNode->SetMesh(arrow);
+		arrowNode->SetBoundingRadius(5.0f);
+		arrowNode->SetPhysicsNode(p->arrows.at(i)->getPhysicsNode());
+		root->AddChild(arrowNode);
 	}
 
 	SceneNode* leaderNode = new SceneNode();
@@ -138,6 +160,7 @@ Renderer::Renderer(Window &parent, Physics* physics) : OGLRenderer(parent) {
 Renderer::~Renderer(void) {
 	delete root;
 	delete raider;
+	delete arrow;
 	delete dragon;
 	delete breathWeapon;
 	delete leader;

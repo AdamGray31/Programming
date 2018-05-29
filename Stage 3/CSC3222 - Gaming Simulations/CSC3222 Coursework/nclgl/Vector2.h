@@ -34,6 +34,16 @@ public:
 		y = 0.0f;
 	}
 
+	void			Normalise() {
+		float length = magnitude();
+
+		if (length != 0.0f) {
+			length = 1.0f / length;
+			x = x * length;
+			y = y * length;
+		}
+	}
+
 	inline friend std::ostream& operator<<(std::ostream& o, const Vector2& v){
 		o << "Vector2(" << v.x << "," << v.y << ")" << std::endl;
 		return o;
@@ -51,8 +61,18 @@ public:
 		return Vector2(x * a, y * a);
 	}
 
+	inline void operator*=(const float &a) {
+		x *= a;
+		y *= a;
+	}
+
 	static float	Dot(const Vector2 &a, const Vector2 &b) {
 		return (a.x*b.x) + (a.y*b.y);
 	}
+
+	inline float magnitude() {
+		return sqrt((x*x) + (y*y));
+	}
+
 };
 

@@ -1,12 +1,15 @@
 #pragma once
 
 #include <vector>
+#include <time.h>
 #include "../../nclgl/window.h"
 #include "../../nclgl/Vector3.h"
 #include "Entity.h"
 #include "Leader.h"
 #include "Dragon.h"
 #include "Follower.h"
+#include "Wall.h"
+#include "Node.h"
 
 using std::vector;
 
@@ -18,6 +21,9 @@ static const float RAIDERVELOCITY = 0.0266f;
 
 //Approx 3 feet per second
 static const float DRAGONVELOCITY = RAIDERVELOCITY * 0.6f;
+
+//Approx 15 feet per second
+static const float ARROWVELOCITY = RAIDERVELOCITY * 3.0f;
 
 //Defines speed of leader's rotation
 static const float LEADERROT = 0.2f;
@@ -41,25 +47,45 @@ public:
 	Dragon* dragon;
 	Entity* breath;
 	vector<Follower*> raiders;
+	vector<Entity*> arrows;
 	Leader* leader;
 	vector<Entity*> entities;
 	vector<Entity*> rocks;
-
+	vector<Entity*> rubble; 
+	Entity* pool;
+	vector<Wall*> walls;
+	
+	
 private:
 	
 	int		numEntities;
 	int		numRaiders;
-	int		numRocks;
 	int		breathState;
 	bool	dragonState;
 	bool	gameStart;
 	bool	aiDemo;
+	float	arrowAliveTime;
+	float	arrowCooldown;
+	float	cooldownPeriod;
+	bool	hoardPathing;
+	bool	poolPathing;
 
+	Node nodes[49][35] = {};
+
+	Node* poolNode;
+	Node* hoardNode;
+
+	float timeSinceLastUpdate;
+
+	void planPath();
 	void moveLeader(float msec);
 	void updateRaiders(float msec);
 	void updateDragon(float msec);
 	void collisionDetection(float msec);
-	void collisionResponse(float msec, Entity* e1, Entity* e2);
+	void collisionResponse(Entity* e1, Entity* e2);
+	void updatePositions(float msec);
+	void debugKeys();
+	void displayInfo(float msec);
 	void startGame();
 
 };

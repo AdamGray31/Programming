@@ -2,6 +2,8 @@
 
 Dragon::Dragon() {
 	Entity::setHP(1000);
+	Entity::setMaxHP(1000);
+	Entity::setMass(20.0f);
 	target = nullptr;
 }
 
@@ -9,6 +11,8 @@ Dragon::Dragon(PhysicsNode * p):
 	Entity(p)
 {
 	Entity::setHP(1000);
+	Entity::setMaxHP(1000);
+	Entity::setMass(20.0f);
 	target = nullptr;
 }
 

@@ -29,6 +29,7 @@ protected:
 	Camera*	camera;
 	Mesh*	map;
 	Mesh*	raider;
+	Mesh*	arrow;
 	Mesh*	leader;
 	Mesh*	dragon;
 	Mesh*	breathWeapon;

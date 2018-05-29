@@ -1,29 +1,6 @@
-﻿  Window.cpp
-  Shader.cpp
-  SceneNode.cpp
-  Quaternion.cpp
-  Plane.cpp
-  OGLRenderer.cpp
-  OBJMesh.cpp
-  Mouse.cpp
-  Mesh.cpp
-  MD5Node.cpp
-  MD5Mesh.cpp
-  MD5FileData.cpp
-  MD5Anim.cpp
-  Matrix4.cpp
-  Keyboard.cpp
-  HeightMap.cpp
-d:\mega\uni\stage 3\gitlab\csc3222 coursework\nclgl\heightmap.cpp(8): warning C4244: '=': conversion from 'float' to 'GLuint', possible loss of data
-d:\mega\uni\stage 3\gitlab\csc3222 coursework\nclgl\heightmap.cpp(9): warning C4244: '=': conversion from 'float' to 'GLuint', possible loss of data
-d:\mega\uni\stage 3\gitlab\csc3222 coursework\nclgl\heightmap.cpp(19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-d:\mega\uni\stage 3\gitlab\csc3222 coursework\nclgl\heightmap.cpp(31): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-d:\mega\uni\stage 3\gitlab\csc3222 coursework\nclgl\heightmap.cpp(32): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-d:\mega\uni\stage 3\gitlab\csc3222 coursework\nclgl\heightmap.cpp(33): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-d:\mega\uni\stage 3\gitlab\csc3222 coursework\nclgl\heightmap.cpp(34): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  GameTimer.cpp
+﻿  CubeRobot.cpp
   Frustum.cpp
-  CubeRobot.cpp
-  Camera.cpp
+  MD5Node.cpp
+  SceneNode.cpp
   Generating Code...
   nclgl.vcxproj -> D:\MEGA\Uni\Stage 3\GitLab\CSC3222 Coursework\CSC3222 Coursework\Debug\nclgl.lib
